@@ -181,40 +181,40 @@ const MyPage = () => {
   //   return <div>Loading...</div>
   // }
 
-  useEffect(() => {
-    // function loadProfile() {
-    // 	const promise = axios.get('http://localhost4000/user/userInfo');
-    // 	const data = promise.then((res) => res.data);
-    // 	return data;
-    // }
-    // loadProfile().then((data) => console.log(data));
-    // if (!me) {
-    // 	router.push('/');
-    // 	return;
-    // }
-    if (!me.pet) {
-      dispatch({
-        type: userActionTypes.LOAD_MYPROFILE_REQUEST,
-      });
-      console.log(me.pet); //<-- undefined
-    }
-    dispatch({
-      type: userActionTypes.LOAD_MYPROFILE_REQUEST,
-    });
-    console.log("me?", me);
-    // router.reload();
-    if (!me.pet) {
-      dispatch({
-        type: userActionTypes.LOAD_MYPROFILE_REQUEST,
-      });
-    }
-    // dispatch({
-    // 	type: userActionTypes.LOAD_MYPROFILE_REQUEST,
-    // });
-    // dispatch({
-    // 	type: userActionTypes.LOAD_CARDS_REQUEST,
-    // });
-  }, []);
+  // useEffect(() => {
+  //   // function loadProfile() {
+  //   // 	const promise = axios.get('http://localhost4000/user/userInfo');
+  //   // 	const data = promise.then((res) => res.data);
+  //   // 	return data;
+  //   // }
+  //   // loadProfile().then((data) => console.log(data));
+  //   // if (!me) {
+  //   // 	router.push('/');
+  //   // 	return;
+  //   // }
+  //   if (!me.pet) {
+  //     dispatch({
+  //       type: userActionTypes.LOAD_MYPROFILE_REQUEST,
+  //     });
+  //     console.log(me.pet); //<-- undefined
+  //   }
+  //   dispatch({
+  //     type: userActionTypes.LOAD_MYPROFILE_REQUEST,
+  //   });
+  //   console.log("me?", me);
+  //   // router.reload();
+  //   if (!me.pet) {
+  //     dispatch({
+  //       type: userActionTypes.LOAD_MYPROFILE_REQUEST,
+  //     });
+  //   }
+  //   // dispatch({
+  //   // 	type: userActionTypes.LOAD_MYPROFILE_REQUEST,
+  //   // });
+  //   // dispatch({
+  //   // 	type: userActionTypes.LOAD_CARDS_REQUEST,
+  //   // });
+  // }, []);
 
   // useLayoutEffect(() => {
   // 	dispatch({
