@@ -1,0 +1,124 @@
+.bodyContainer {
+	display: flex;
+
+	height: 75vh;
+	width: 100vw;
+	// align-items: flex-start;
+	justify-self: flex-end;
+	align-items: center;
+	.bodyWhole {
+		background-color: rgb(250, 244, 244);
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		border: 2rem, solid, blue;
+		width: 100vw;
+		height: 75vh;
+		align-items: center;
+		justify-items: flex-end;
+
+		// align-items: center;
+		.upperBodyContainer {
+			display: flex;
+			flex-direction: column;
+			width: 50vw;
+			height: 55%;
+			padding-top: 30px;
+			border: 2rem, solid, blue;
+			align-content: center;
+			background-color: rgb(250, 244, 244);
+			.slider {
+				display: flex;
+				border: 1px, solid, green;
+			}
+		}
+		.lowerBodyContainer {
+			display: flex;
+			width: 50vw;
+			height: 45%;
+			flex-direction: column;
+			align-content: center;
+			background-color: rgb(250, 244, 244);
+			align-items: center;
+			overflow-y: scroll;
+			.userPetInfo,
+			.editUserPetInfo {
+				display: flex;
+				// position: relative;
+				flex-direction: column;
+				border: 2rem, solid, blue;
+				width: 25vw;
+				border: 1rem, solid, white;
+				// overflow-y: scroll;
+
+				.userInfoEdit,
+				.userInfo {
+					display: flex;
+					flex-direction: column;
+					border: 3rem, solid, white;
+					width: 500px;
+				}
+				.petInfo {
+					display: flex;
+					align-items: left;
+					flex-direction: column;
+					width: 25vw;
+					border: 3rem, solid, black;
+					// max-width: 200px;
+					.introduce {
+						border: 1px solid tan;
+						width: 400px;
+					}
+				}
+				.petInfoEdit {
+					display: flex;
+					flex-direction: column;
+					.editPetName {
+						display: flex;
+						.name {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editSpecies {
+						display: flex;
+						.petSpecies {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editBreed {
+						display: flex;
+						.petBreed {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editAge {
+						display: flex;
+						.petAge {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editInfoBtn {
+						display: flex;
+					}
+				}
+			}
+			.editIntroduce {
+				display: flex;
+				.petIntroduce {
+					padding-left: 40px;
+					align-self: center;
+				}
+			}
+			.onEditBtns {
+				display: flex;
+				justify-content: center;
+				padding-top: 20px;
+				width: 100%;
+			}
+		}
+	}
+}
