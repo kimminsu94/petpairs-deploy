@@ -589,31 +589,31 @@ const MyPage = () => {
 // 		};
 // 	});
 
-// export const getServerSideProps = wrapper.getServerSideProps(
-//   (store) =>
-//     async (context): Promise<any | null> => {
-//       console.log("hello ServerSideProps");
-//       const cookie = context.req ? context.req.headers.cookie : "";
-//       axios.defaults.headers.Cookie = ""; //초기화 <--- 비어주는거
-//       axios.defaults.baseURL = "https://petpairs.de";
-//       axios.defaults.withCredentials = true;
-//       console.log(
-//         "헤더에 쿠키 박아보렸나?~ 짜릿짜릿해-------------------------------------------------------------------------",
-//         context.req.headers
-//       );
-//       if (context.req && cookie) {
-//         console.log(
-//           "헤더에 쿠키 박아보리기~ 짜릿짜릿해-------------------------------------------------------------------------"
-//         );
-//         axios.defaults.headers.Cookie = cookie;
-//       }
-//       await store.dispatch({
-//         type: userActionTypes.LOAD_MYPROFILE_REQUEST,
-//       });
-//       store.dispatch(END);
-//       await store.sagaTask?.toPromise();
-//     }
-// );
+export const getServerSideProps = wrapper.getServerSideProps(
+  (store) =>
+    async (context): Promise<any | null> => {
+      console.log("hello ServerSideProps");
+      const cookie = context.req ? context.req.headers.cookie : "";
+      axios.defaults.headers.Cookie = ""; //초기화 <--- 비어주는거
+      axios.defaults.baseURL = "https://petpairs.de";
+      axios.defaults.withCredentials = true;
+      console.log(
+        "헤더에 쿠키 박아보렸나?~ 짜릿짜릿해-------------------------------------------------------------------------",
+        context.req.headers
+      );
+      if (context.req && cookie) {
+        console.log(
+          "헤더에 쿠키 박아보리기~ 짜릿짜릿해-------------------------------------------------------------------------"
+        );
+        axios.defaults.headers.Cookie = cookie;
+      }
+      await store.dispatch({
+        type: userActionTypes.LOAD_MYPROFILE_REQUEST,
+      });
+      store.dispatch(END);
+      await store.sagaTask?.toPromise();
+    }
+);
 
 // export const getServerSideProps =
 // 	wrapper.getServerSideProps(async (context): Promise<any> => {
