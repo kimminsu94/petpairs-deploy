@@ -131,7 +131,7 @@ const MyPage = () => {
 
         window.alert("프로필이 수정 되었습니다!");
         console.log(me);
-        router.reload();
+        // router.reload();
         setChangeInfoBtnOn(false);
         setChangeUserInfoOn(false);
         setEditPetName(false);
