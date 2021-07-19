@@ -82,7 +82,7 @@ const LoginModal: React.FC<ChildProps> | any = (
           router.push("MyPage");
           console.log("email", me?.email);
         }
-        router.replace("/");
+        // router.replace("/");
         // if (logInDone || me) {
         // 	console.log('왜 안돼');
         // 	router.push({ pathname: '/MyPage' });
