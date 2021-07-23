@@ -112,7 +112,7 @@ function* logOut() {
 // 	data?: number;
 // }
 function loadProfileAPI(data: loadProfileData) {
-  return axios.get("https://www.petpairs.de/user/userInfo");
+  return axios.get("https://petpairs.de/user/userInfo");
 }
 function* loadProfile(action: ILoadProfileRequest) {
   try {
